@@ -97,7 +97,6 @@ def Descifrado(c,d,n):
   return S
 
 
-e = []
 count = 1
 ed = RSA_KEY_GENERATOR(63)
 palabra = random.randint(1,99)
@@ -107,11 +106,10 @@ while(count < 10):
   ed = RSA_KEY_GENERATOR(64)
   c = Cifrado(palabra, ed[1],ed[0])
   m = Descifrado(c, ed[2],ed[0])
-  if(m == palabra and ed[1] not in e):
+  if(m == palabra):
     print(palabra)
     print(ed)
     print(c)
     print(m)
-    e.append(ed[1])
     palabra = random.randint(1,99)
     count += 1
