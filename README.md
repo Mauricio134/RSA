@@ -4,6 +4,6 @@
 13. Imprimir tabla: esta sección imprimirá 10 valores para probar la efectividad del código con diferentes parámetros
 <br>
 ![image](https://user-images.githubusercontent.com/85748915/175209966-4f4df88f-3f53-4834-8eba-29522f409838.png)
-
+<a href="https://codepen.io/carlossalvadordiaz/pen/PozMmdq"></a>
 
 
