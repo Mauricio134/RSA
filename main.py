@@ -1,19 +1,19 @@
 import random
 def Fermat(a, x, n):
   if x == 0:
-    return 1;
+    return 1
   elif x%2 == 0:
-    t = Fermat(a, x/2, n);
-    return (t*t)%n;
+    t = Fermat(a, x/2, n)
+    return (t*t)%n
   else:
-    t = Fermat(a, x-1, n);
-    c = a%n;
-    return (t*c)%n;
+    t = Fermat(a, x-1, n)
+    c = a%n
+    return (t*c)%n
 
 def Es_Compuesto(a, n, t, x):
   x0 = Fermat(a, x, n)
   if x0 == 1 or x0 == n-1:
-    return False;
+    return False
   for i in range(t):
     x0 = Fermat(x0, 2, n)
     if x0==n-1:
@@ -48,7 +48,7 @@ def Randomgen(b):
 
 def EUCLIDES(a, b):
   if b == 0:
-    return a;
+    return a
   else:
     return EUCLIDES(b, a%b)
 
@@ -96,7 +96,9 @@ def Descifrado(c,d,n):
   S = Fermat(c,d,n)
   return S
 
-
+mees = []
+cif= []
+meesinv= []
 count = 1
 ed = RSA_KEY_GENERATOR(63)
 palabra = random.randint(1,99)
@@ -108,8 +110,19 @@ while(count < 10):
   m = Descifrado(c, ed[2],ed[0])
   if(m == palabra):
     print(palabra)
+    mees.append(palabra)
     print(ed)
     print(c)
+    cif.append(c)
     print(m)
+    meesinv.append(m)
     palabra = random.randint(1,99)
     count += 1
+
+
+print("-------------------------------------------------------")
+print('{: ^10} {: ^10} {: ^10} {: ^10} {: ^10}'.format ("Mensaje","|", "Cifrado", "|", "Descifrado"))
+print("-------------------------------------------------------")
+for i in range(len(mees)):
+  print('{: ^10} {: ^10} {: ^10} {: ^10} {: ^10}'.format (mees[i], "|", cif[i],"|", meesinv[i]))
+  print("-------------------------------------------------------")
