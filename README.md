@@ -4,6 +4,6 @@
 13. Imprimir tabla: esta sección imprimirá 10 valores para probar la efectividad del código con diferentes parámetros
 <br>
 ![image](https://user-images.githubusercontent.com/85748915/175209966-4f4df88f-3f53-4834-8eba-29522f409838.png)<br>
-<img align="center" src="[https://github-readme-stats.vercel.app/api/top-langs?username=carlossalvadordiaz&show_icons=true&locale=en&layout=compact](https://user-images.githubusercontent.com/85748915/175209966-4f4df88f-3f53-4834-8eba-29522f409838.png)" /></p>
+<img align="center" src="https://user-images.githubusercontent.com/85748915/175209966-4f4df88f-3f53-4834-8eba-29522f409838.png" alt="carlossalvadordiaz" /></p>
 
 
