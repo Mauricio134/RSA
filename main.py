@@ -1,5 +1,3 @@
-from email import message
-from pydoc import describe
 import random
 def Fermat(a, x, n):
   if x == 0:
